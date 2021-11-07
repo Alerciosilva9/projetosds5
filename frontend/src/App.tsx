@@ -22,7 +22,7 @@ function App() {
             <h5 className="text-center text-secondary">Taxa de Sucesso</h5>
             <DonutChart/>
           </div>
-          <div className="py-3"><h2 className="text-primary">Todas as vendas</h2></div>
+          <h2 className="test-primary">Todas as vendas</h2>
 
          
           
