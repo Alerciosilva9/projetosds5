@@ -1,16 +1,16 @@
-import axios from 'axios';
-import { useEffect, useState } from 'react';
+//import axios from 'axios';
+//import { useEffect,useState } from 'react';
 import Chart from 'react-apexcharts'
-import { SaleSum } from 'types/sale';
-import { BASE_URL } from 'utils/requests';
-
+//import { SaleSum } from 'types/sale';
+//import { BASE_URL } from 'utils/requests';
+/*
 type ChartData = {
     labels: string[],
     series: number[]
-}
+}*/
 function DonutChart() {
     
-    const[chartData, setChartData] = useState<ChartData>({ labels : [], series: [] });
+    //const[chartData, setChartData] = useState<ChartData>({ labels : [], series: [] });
 
     /*
     useEffect(() => {
@@ -21,7 +21,7 @@ function DonutChart() {
             const mySeries = data.map(x => x.sum);
             setChartData({ labels: myLabels, series: mySeries});
         });
-    }, [])*/
+    }, [])
 
     
     const options = {
@@ -29,11 +29,11 @@ function DonutChart() {
             show: true
         }
     }
-    
+    */
     return (
         <Chart
-            options={{...options, labels:chartData.labels }}
-            series={chartData.series}
+            //options={{...options, labels:chartData.labels }}
+            //series={chartData.series}
             type="donut"
             height="240"
         
