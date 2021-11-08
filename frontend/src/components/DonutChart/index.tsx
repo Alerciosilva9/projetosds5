@@ -1,8 +1,8 @@
-//import axios from 'axios';
+import axios from 'axios';
 import { useEffect,useState } from 'react';
 import Chart from 'react-apexcharts'
-//import { SaleSum } from 'types/sale';
-//import { BASE_URL } from 'utils/requests';
+import { SaleSum } from 'types/sale';
+import { BASE_URL } from 'utils/requests';
 
 type ChartData = {
     labels: string[],
@@ -12,7 +12,7 @@ function DonutChart() {
     
     const[chartData, setChartData] = useState<ChartData>({ labels : [], series: [] });
 
-    /*
+    
     useEffect(() => {
         axios.get(`${BASE_URL}/sales/amount-by-seller`)
         .then(response => {
@@ -21,7 +21,7 @@ function DonutChart() {
             const mySeries = data.map(x => x.sum);
             setChartData({ labels: myLabels, series: mySeries});
         });
-    }, [])*/
+    }, [])
 
     
     const options = {

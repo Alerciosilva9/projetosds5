@@ -17,10 +17,12 @@ function Dashboard() {
               <h5 className="text-center text-secondary">Taxa de Sucesso</h5>
               <BarChart/>
             </div>
+            {/*
             <div className="col-sm-6">
               <h5 className="text-center text-secondary">Taxa de Sucesso</h5>
               <DonutChart/>
-            </div>
+            </div>*/
+            }
           </div>
   
           <DataTable />
