@@ -23,11 +23,11 @@ function Dashboard() {
             </div>
           </div>
   
-          
+          <DataTable />
+        <Footer />
         </div>
         
-        <DataTable />
-        <Footer />
+       
   
       </>
     );
